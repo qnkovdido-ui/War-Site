@@ -58,6 +58,8 @@ wwwroot\lib\jquery-validation\LICENSE.md
 wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.js
 wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.min.js
 wwwroot\lib\jquery-validation-unobtrusive\LICENSE.txt
+wwwroot\Pic\B1.jpg
+wwwroot\Pic\B2.jpg
 wwwroot\Pic\EurofighterTyphoon.jpg
 wwwroot\Pic\F16.jpg
 wwwroot\Pic\F22.jpg
@@ -67,4 +69,5 @@ wwwroot\Pic\J20.jpg
 wwwroot\Pic\Mig29.jpg
 wwwroot\Pic\Mig31.jpg
 wwwroot\Pic\Rafale.jpg
+wwwroot\Pic\Su37.jpg
 wwwroot\Pic\Su57.jpg

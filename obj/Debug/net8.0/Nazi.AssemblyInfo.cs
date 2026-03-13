@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Nazi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+13f88014f30f80abd0cf901695cdf6c27c1c7db5")]
 [assembly: System.Reflection.AssemblyProductAttribute("Nazi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Nazi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -125,8 +125,79 @@ namespace Nazi.Controllers
                 IsActive = true,
                 ImageUrl = "/Pic/Gripen.jpg"
             };
-            AirPlane[] airPlanes = { EuroFighterTyphoon, F22, Su57, F35, Rafale, Mig29, Mig31, F16, J20, Gripen };
+            AirPlane Su37 = new AirPlane()
+            {
+                id = 11,
+                brand = "Sukhoi",
+                model = "Su-37 “Terminator”",
+                Maxspeed = 2500,
+                FirstFlightSate = new DateTime(1996, 4, 12),
+                IsActive = true,
+                ImageUrl = "/Pic/Su37.jpg"
+            };
+            AirPlane B2 = new AirPlane()
+            {
+                id = 12,
+                brand = "Northrop Corporation",
+                model = "Northrop B-2 Spirit",
+                Maxspeed = 1010,
+                FirstFlightSate = new DateTime(1989, 7, 17),
+                IsActive = true,
+                ImageUrl = "/Pic/B2.jpg"
+            };
+            AirPlane B1 = new AirPlane()
+            {
+                id = 13,
+                brand = "Rockwell International",
+                model = "Rockwell B?1 Lancer",
+                Maxspeed = 1335,
+                FirstFlightSate = new DateTime(1974, 12, 23),
+                IsActive = true,
+                ImageUrl = "/Pic/B1.jpg"
+            };
+            AirPlane F18 = new AirPlane()
+            {
+                id = 14,
+                brand = "McDonnell Douglas",
+                model = "F/A-18 Hornet",
+                Maxspeed = 1915,
+                FirstFlightSate = new DateTime(1978, 11, 18),
+                ImageUrl = "/Pic/F18.jpg"
+            };
+            AirPlane Su35 = new AirPlane()
+            {
+                id = 15,
+                brand = "Sukhoi",
+                model = "Sukhoi Su-35",
+                Maxspeed = 2390,
+                FirstFlightSate = new DateTime(2008, 2, 19),
+                ImageUrl = "/Pic/Su35.jpg"
+            };
+            AirPlane F15 = new AirPlane()
+            {
+                id = 16,
+                brand = "Boeing",
+                model = "F-15 Eagle",
+                Maxspeed = 2655,
+                FirstFlightSate = new DateTime(1972, 7, 27),
+                ImageUrl = "/Pic/F15.jpg"
+            };
+
+
+
+
+
+
+
+
+
+
+
+
+
+            AirPlane[] airPlanes = { EuroFighterTyphoon, F22, Su57, F35, Rafale, Mig29, Mig31, F16, J20, Gripen, Su37, B2, B1, F18, Su35, F15 };
             ViewBag.AirPlanes = airPlanes;
+
 
 
 
@@ -141,8 +212,12 @@ namespace Nazi.Controllers
             airplaneList.Add(F16);
             airplaneList.Add(J20);
             airplaneList.Add(Gripen);
-
-
+            airplaneList.Add(Su37);
+            airplaneList.Add(B2);
+            airplaneList.Add(B1);
+            airplaneList.Add(F18);
+            airplaneList.Add(Su35);
+            airplaneList.Add(F15);
 
             return View(airplaneList);
         }
