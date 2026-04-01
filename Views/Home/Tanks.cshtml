@@ -1,0 +1,26 @@
+﻿@model List<Tanks>
+
+@{
+	ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+	<h1 class="display-4">Welcome</h1>
+	<p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+
+
+<div class="row">
+	@foreach (var item in Model)
+	{
+		<div class="col-md-4">
+			<div class="card mb-4 box-shadow">
+				<div class="card-body">
+					<img src="@item.ImageUrl" width="200" />
+					<p class="card-text">@item.Brand</p>
+					<p class="card-text">@item.Model</p>
+					<p class="card-text">@item.WhenMade</p>
+				</div>
+			</div>
+		</div>
+	}
