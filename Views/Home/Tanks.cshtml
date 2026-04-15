@@ -1,26 +1,37 @@
-﻿@model List<Tanks>
+﻿@model List<Nazi.Models.Tanks>
 
 @{
-	ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Tank Showcase";
 }
 
 <div class="text-center">
-	<h1 class="display-4">Welcome</h1>
-	<p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <h1 class="display-4">Tank Showcase</h1>
+    <p>Learn about modern tanks and their specifications.</p>
 </div>
 
-
 <div class="row">
-	@foreach (var item in Model)
-	{
-		<div class="col-md-4">
-			<div class="card mb-4 box-shadow">
-				<div class="card-body">
-					<img src="@item.ImageUrl" width="200" />
-					<p class="card-text">@item.Brand</p>
-					<p class="card-text">@item.Model</p>
-					<p class="card-text">@item.WhenMade</p>
-				</div>
-			</div>
-		</div>
-	}
+    @foreach (var tank in Model)
+    {
+        <div class="col-md-4">
+            <div class="card mb-4 box-shadow">
+                <div class="card-body">
+                    @if (!string.IsNullOrEmpty(tank.ImageUrl))
+                    {
+                        <img src="@tank.ImageUrl" width="200" alt="@tank.Model" />
+                    }
+                    <p><strong>Brand:</strong> @tank.Brand</p>
+                    <p><strong>Model:</strong> @tank.Model</p>
+                    <p><strong>Country:</strong> @tank.Country</p>
+                    <p><strong>Top Speed:</strong> @tank.TopSpeed km/h</p>
+                    <p><strong>Weight:</strong> @tank.Weight t</p>
+                    <p><strong>Crew Size:</strong> @tank.CrewSize</p>
+                    <p><strong>Main Gun Caliber:</strong> @tank.MainGunCaliber mm</p>
+                    <p><strong>Autoloader:</strong> @(tank.Autoloader ? "Yes" : "No")</p>
+                    <p><strong>Thermal Vision:</strong> @(tank.ThermalVision ? "Yes" : "No")</p>
+                    <p><strong>Night Vision:</strong> @(tank.NightVision ? "Yes" : "No")</p>
+                    <p><strong>When Made:</strong> @tank.WhenMade</p>
+                </div>
+            </div>
+        </div>
+    }
+</div>

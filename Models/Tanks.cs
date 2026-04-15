@@ -33,5 +33,6 @@
 
             public bool IsActive { get; set; } = true;
             public double WhenMade { get; set; }
+            public string Country { get; set; }
     }
 }
